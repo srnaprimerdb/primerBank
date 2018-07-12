@@ -26,11 +26,10 @@ if sys.argv[1] == "I":
 query = "SELECT * FROM "+method+"results WHERE %s" % sys.argv[2]
 
 
-
-print ("------------------------------------------------------------------------------")
+print ("-"*len(query))
 print (query)
-print ("------------------------------------------------------------------------------")
-print ()
+print ("-"*len(query))
+print ("\n")
 
 
 curs.execute(query)
@@ -38,7 +37,7 @@ names = [f[0] for f in curs.description]
 for row in curs.fetchall():
     for pair in zip(names, row):
         print ('%s: %s' % pair)
-    print()
+    print ("\n")
 
 curs.close()
 conn.commit()
