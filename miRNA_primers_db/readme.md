@@ -1,5 +1,3 @@
-q
-q
 ## The current directory includes:
 	1. srnaprimer_miRNA_results.db is a databases file contains miRNA primers results.
  	2. srnaprimer_query.py is a program for querying the priemr results from srnaprimer_miRNA_results.db.
